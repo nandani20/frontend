@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="forms.css/">
+</head>
+<body>
+<form action=""> <!--it will create a form, there r various input types-->
+    <label for="1">Name</label> <!-- for and id are linked, so they have same name -->
+    <!--placeholder= whtatever you written in it will be show on the box, required= you can't submit the form without filling that field -->
+    <input type="text" placeholder="enter your name" name="username" id="1" required> <br><br>
+    <label for="2">Email</label> <!--name= it will go to the server, appear on the url-->
+    <input type="email" placeholder="enter your email address" name="email" id="2" required> <br><br>
+    <label for="3">Password</label>
+    <input type="Password" placeholder="password" name="password" id="3" maxlength="13" minlength="5"> <br><br>
+    <label for="10">dob</label> 
+    <input type="date" name="dob" id="10" required placeholder="your dob"> <br><br>
+    <p> <b>your preference:</b> 
+    <label for="4">python</label>
+    <input type="checkbox" name="preference" id="4" value="python"> <!--checkbox=u can fill multiple options-->
+    <label for="5">C++</label> <!--value= what r u chosing in the form, will go with the name -->
+    <input type="checkbox" name="preference" id="5" value="C++">
+    <label for="6">Java</label>
+    <input type="checkbox" name="preference" id="6" value="Java"> </p>
+    <p> <b>education status</b> 
+    <label for="7">11th</label>
+    <input type="radio" name="edu" id="7" value="11th"> <!--radio= u can fill only one option-->
+    <label for="8">12th</label>
+    <input type="radio" name="edu" id="8" value="12th">
+    <label for="9">1st year</label>
+    <input type="radio" name="edu" id="9" value="1st year"></p> <br>  <!--button= it will create a button-->
+    <button>submit your response</button> <!-- default type = submit--> <br>
+    <button type="reset">Reset</button>  <!--type reset will reset the form-->
+    <hr></form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>search on yt</button>
+    </form>
+    <form action="https://www.google.com/search?q=google&oq=google&aqs=chrome.0.69i59j69i65l2j69i60l3.2886j0j7&sourceid=chrome&ie=UTF-8">
+        <input type="text" name="q">
+        <button>search on google</button>
+
+    </form>
+    <hr>
+    <video src="" controls autoplay muted loop poster="rohit khandelwal.jfif"></video>
+
+
+
+    
+</body>
+</html>
